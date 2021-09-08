@@ -51,8 +51,12 @@ After using different methods of cleaning, we run the the cleaned text through m
 
 ## Conclusion
 
+
 ## Next Steps
+
 
 ## Source
 Collective Opinion Spam Detection: Bridging Review Networks and Metadata. Shebuti Rayana, Leman Akoglu, ACM SIGKDD, Sydney, Australia, August 10-13, 2015
+[link here](http://odds.cs.stonybrook.edu/yelpnyc-dataset/)
+
 ## Repository Structure

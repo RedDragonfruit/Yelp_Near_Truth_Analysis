@@ -41,9 +41,16 @@ The objective of this project is to determine whether a review is truthful or no
 - '-'
 - variations of 'yum' and 'yummy'
 
-After using different methods of cleaning, we run the the cleaned text through multinomial Naive Bayes models where high accuracy was determined to be the best metric.
+After using different methods of cleaning, we run the the cleaned text through a logistic model and a multinomial Naive Bayes model. The NB model ran through a gridsearch to find the best fit. In this model the most common words in both the truth and the fraud values were removed. The following words are removed from the reviews:
 
-[RUN NEW FEATURE HERE]
+ - "restaurant"
+ - "place"
+ - "good"
+ - "great"
+
+
+
+[POSSIBLY RUN NEW FEATURE HERE AND TALK ABOUT IT]
 
 ## Results 
 

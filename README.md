@@ -71,10 +71,11 @@ Collective Opinion Spam Detection: Bridging Review Networks and Metadata. Shebut
 [link here](http://odds.cs.stonybrook.edu/yelpnyc-dataset/)
 
 ## Repository Structure
-
+'''
 ├── Tool  <-- Custom functions
 ├── Images     <--- pictures from online/internally generated  
 ├── 01_.ipynb     <-- first notebook : cleans and explores the data
 ├── 02.ipynb     <-- second notebook : models for the cleaned data
 ├── 03.ipynb
 ├── README.md
+'''

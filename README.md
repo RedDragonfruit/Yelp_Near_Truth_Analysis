@@ -60,11 +60,11 @@ The best model was the naive bays which came out to be approximately 68% on the 
 
 ## Conclusion
 
-
+NLP is a great way to breakdown text for analysis, but it is not ideal to determine if a restaurant's review is genuine or not. The words commonly in real and fake reviews use similar writing style and is difficult to distingush without more information.
 
 ## Next Steps
 
-
+Gather more information on the users as they write reviews so that there are more weight in the model.
 
 ## Source
 Collective Opinion Spam Detection: Bridging Review Networks and Metadata. Shebuti Rayana, Leman Akoglu, ACM SIGKDD, Sydney, Australia, August 10-13, 2015

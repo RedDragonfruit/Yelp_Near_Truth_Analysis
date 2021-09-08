@@ -48,18 +48,22 @@ After using different methods of cleaning, we run the the cleaned text through a
  - "good"
  - "great"
 
-
+![word_cloud](./Images/word_cloud.png)
 
 [POSSIBLY RUN NEW FEATURE HERE AND TALK ABOUT IT]
 
 ## Results 
 
+The best model was the naive bays which came out to be approximately 68% on the training data and 70% on the test dataset. When this model was run on the unseen data, it achieved a suprisingly higher score of 87%. While this number is still shy of the dummy model which predicted 89% simply by classifying all reviews as real, this is not ideal as it is hard to determine if more fakes reviews are added over time. In this unseen data, the majority of the miscategorized reviews were truthful reviews that were considered fake. This result is not ideal as users would not be pleased to have their review flagged when they put effort into giving their honest review. On the other hand, if too many fake reviews get through and alter the ratings of a restaurant, the user expereince is affected and less people will write reviews.
 
+![wordcloud](./Images/cm_unseen.png)
 
 ## Conclusion
 
 
+
 ## Next Steps
+
 
 
 ## Source

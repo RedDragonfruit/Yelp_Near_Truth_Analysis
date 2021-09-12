@@ -39,6 +39,7 @@ def remove_stop_words(review):
     return review
 
 
+
 ###################################################### 
 def NN_cleaning(original_df):
     
@@ -63,17 +64,16 @@ def NN_cleaning(original_df):
     return docs, labels
 
 
-
 def text_to_fn(text):
-    original_df = pd.DataFrame([text], columns = ['review'])
-    return original_df
+    frame = pd.DataFrame([text], columns = ['review'])
+    frame['target'] = 0
+    return frame
+
 
 
 def NN_cleaning_st(text):
-    
     original_df = pd.DataFrame([text], columns = ['review'])
     original_df['review'] = original_df['review'].apply(clean_data)
-    
     original_df['review'] = original_df['review'].apply(remove_stop_words)
     corpus = list(original_df)
     cv = CountVectorizer(max_features = 1000)

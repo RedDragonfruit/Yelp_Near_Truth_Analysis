@@ -72,6 +72,10 @@ NLP is a great way to breakdown text for analysis, but it is not ideal to determ
 Gather more information on the users as they write reviews so that there are more weight in the model.
 add pictures/location/more user info
 
+## Author
+
+Eddie Lin
+Github: RedDragonfruit
 
 ## Source
 Collective Opinion Spam Detection: Bridging Review Networks and Metadata. Shebuti Rayana, Leman Akoglu, ACM SIGKDD, Sydney, Australia, August 10-13, 2015

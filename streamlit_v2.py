@@ -2,6 +2,9 @@ import streamlit as st
 import pandas as pd
 import joblib, os
 
+from lime.lime_text import LimeTextExplainer
+import streamlit.components.v1 as components
+
 #news_vectorizer = open('models/final_news_cv_vectorizer.pkl', 'rb')
 #news_cv = joblib.load()
 
@@ -15,7 +18,7 @@ nb_model = joblib.load('pipe_temp')
 def main():
 	#st.title("Review Classification")
 
-	st.markdown("<h1 style='text-align: center; color: white;'>Yelp Review Classification</h1>", unsafe_allow_html=True)
+	st.markdown("<h1 style='text-align: center; color: black;'>Yelp Review Classification</h1>", unsafe_allow_html=True)
 
 
 	col1, col2, col3 = st.columns([10,20,1])
@@ -58,7 +61,7 @@ def main():
 			st.write(f'This review is most likely {truth}')
 			proba = predictor.predict_proba(test_df['review'])
 		
-			st.write('Probability this review is not Truthful:')
+			st.write('Probability this review is Truthful:')
 			st.write(((proba[0][1])*100).round(2),'%')
 		if model_choice == 'NN':
 			pass
@@ -66,7 +69,17 @@ def main():
 		st.info("NLP")
 
 	
+	explain_pred = st.button('Explain Predictions')
 
+	if explain_pred:
+		test_df=pd.DataFrame([rev],columns = ['review'])
+		predictor = nb_model
+		with st.spinner('Generating explanations'):
+			class_names = ['false', 'truth']
+			explainer = LimeTextExplainer(class_names=class_names)
+			exp = explainer.explain_instance(rev, 
+				predictor.predict_proba, num_features=10)
+			components.html(exp.as_html(), height=800)
 
 if __name__ == '__main__':
 	main()

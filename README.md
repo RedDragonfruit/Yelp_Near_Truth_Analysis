@@ -103,8 +103,7 @@ The following demo is an app created using streamlit to demonstrate the uses of 
 
 ## Next Steps
 
-Gather more information on the users as they write reviews so that there are more weight in the model.
-add pictures/location/more user info
+Gather more information on the users as they write reviews so that there are more weight in the model including but not limited to pictures and locations. 
 
 ## Author
 
@@ -118,10 +117,14 @@ Collective Opinion Spam Detection: Bridging Review Networks and Metadata. Shebut
 ## Repository Structure
 
 ```
-├── Tool  <-- Custom functions
-├── Images     <--- pictures from online/internally generated  
-├── 01_.ipynb     <-- first notebook : cleans and explores the data
-├── 02.ipynb     <-- second notebook : models for the cleaned data
-├── 03.ipynb
+├── Images     <-- pictures from online/internally generated  
+├── Tool  <-- Custom functions FNC and NN
+├── 01_EDA.ipynb     <-- first notebook : cleans and explores the data
+├── 02_Initial_model_and_testing.ipynb     <-- second notebook : models for the cleaned data
+├── 03_Refining_and_GridSearch.ipynb    <-- Gridseach and testing NB model on unseen
+├── 04_Feature_models.ipynb  <-- Models with generated features
+├── 05_neural_network_initial.ipynb.  <-- testing sequential models
+├── 06_neural_network-refined_and_validation.ipynb. <-- simplified model and testing unseen data
 ├── README.md
+├── streamlit_v2.py. <---- Code to run streamlit app
 ```

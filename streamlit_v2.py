@@ -5,6 +5,8 @@ import joblib, os
 from lime.lime_text import LimeTextExplainer
 import streamlit.components.v1 as components
 
+
+import Tools.NN as nn
 #news_vectorizer = open('models/final_news_cv_vectorizer.pkl', 'rb')
 #news_cv = joblib.load()
 
@@ -41,12 +43,13 @@ def main():
 		st.info("predition with ML")
 
 	rev = st.text_area("Enter Review")
+	rev = nn.remove_stop_words(rev)
 	all_ml_model = ['NB', 'NN']
 	model_choice = st.selectbox('Choose Model',all_ml_model)
 	predction_labels = {'false':0,'true':1}
 	if st.button("Classify"):
 		test_df =pd.DataFrame([rev],columns =['review'])
-		st.text('Original test ::\n{}'.format(rev))
+		st.text('Cleaned text ::\n{}'.format(rev))
 		
 		#vect_text = news_cv.transform([rev]).toarray()
 		if model_choice == 'NB':

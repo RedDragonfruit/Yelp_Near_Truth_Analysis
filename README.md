@@ -2,6 +2,18 @@
 
 ![Yelp_logo](./Images/Yelp-Logo-Refresh.gif)
 
+
+## Table of Contents
+* [Overview](#Overview)
+* [Business Problem](#Business-Problem)
+* [Data](#Data)
+* [Analysis](#Analysis)
+* [Results](#Results)
+* [Conclusions](#Conclusions)
+* [Demo](#Demo)
+* [Next Steps](#Next-Steps)
+* [Repository Structure](#Repository-Structure)
+
 ## Overview
 
 Living in a big city gives people options on what they wish to eat and living in a city like New York, the options are nearly limitless. Most people don't go out to eat everyday so when they do, they want to be able to enjoy their meals. With so many options out there, the only way to decide where to go besides relying on personal experience is to rely on the experiences of others in the form of online reviews. Many people turn to reviews for guidance but if the reviews are overloaded with fake input, our opinions can be swayed as well. 

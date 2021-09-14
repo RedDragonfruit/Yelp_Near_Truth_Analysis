@@ -12,6 +12,7 @@
 * [Conclusions](#Conclusions)
 * [Demo](#Demo)
 * [Next Steps](#Next-Steps)
+* [Author](#Author)
 * [Repository Structure](#Repository-Structure)
 
 ## Overview

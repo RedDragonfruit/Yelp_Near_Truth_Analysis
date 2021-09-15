@@ -110,7 +110,7 @@ True
 From the confusion matrix above we can see that the two models have a very different approach to the same reviews. The Neural Network model is more conservative in predicting a fake review while the Naive Bayes took a more aggressive approach. Both model needs improvement as more information is needed for a better prediction. While NLP is a useful tool is great for classifying something completely different, it is not the best tool as a standalone tool for predicting reviews as the manner speech varies from person to person and it applies for both real reviews and the fake ones people create.
 
 ## Demo
-The following demo is an app created using streamlit to demonstrate the uses of a review detection algorithm. A review is pulled direcrtly from yelp and is processed through the NB model (simplified: does not remove stop words).
+The following demo is an app created using streamlit to demonstrate the uses of a review detection algorithm. A review is pulled direcrtly from yelp and is processed through the NB model.
 
 ![DEMO](./Images/yelp_streamlit_demo.gif)
 

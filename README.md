@@ -139,5 +139,6 @@ Collective Opinion Spam Detection: Bridging Review Networks and Metadata. Shebut
 ├── 05_neural_network_initial.ipynb.  <-- testing sequential models
 ├── 06_neural_network-refined_and_validation.ipynb. <-- simplified model and testing unseen data
 ├── README.md
+├── Yelp_near_truth_Presentation.pdf  <-- Presentation
 ├── streamlit_v2.py. <---- Code to run streamlit app
 ```

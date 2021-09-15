@@ -116,7 +116,7 @@ The following demo is an app created using streamlit to demonstrate the uses of 
 
 ## Next Steps
 
-Gather more information on the users as they write reviews so that there are more weight in the model including but not limited to pictures and locations. 
+Gather more information on the users as they write reviews so that there are more weight in the model including but not limited to pictures and locations. Compare the writing between yelp and other platforms to see if writing is similar.
 
 ## Author
 

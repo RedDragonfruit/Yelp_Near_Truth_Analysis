@@ -1,24 +1,19 @@
 import pandas as pd
 import numpy as np
-from sklearn.metrics import accuracy_score, confusion_matrix
+
 import nltk
 import re
 
 from nltk.corpus import stopwords
 
-from sklearn.feature_extraction.text import CountVectorizer
-
-from sklearn.feature_extraction.text import TfidfTransformer
-from sklearn.feature_extraction.text import TfidfVectorizer
-
+from sklearn.metrics import accuracy_score, confusion_matrix
+from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer, TfidfTransformer
 from sklearn.model_selection import train_test_split
+
 from tensorflow.keras.preprocessing.text import one_hot
 from tensorflow.keras.preprocessing.sequence import pad_sequences
-
-from tensorflow.keras.layers import Dense, Embedding,GlobalMaxPooling1D
 from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense
-from tensorflow.keras.layers import Embedding, Conv1D
+from tensorflow.keras.layers import Embedding, Conv1D, Dense, Dense, Embedding,GlobalMaxPooling1D
 
 
 
@@ -27,9 +22,12 @@ def clean_data(review):
     review = review.lower()
     return review
 
+
+#creating a list of stopwords and adding common words found in both truthful and non truthful review
 sw = stopwords.words('english')
 sw += ['food','place','good',"great"]
 
+#removes stopwords
 def remove_stop_words(review):
     review_minus_sw = []
     stop_words = sw
